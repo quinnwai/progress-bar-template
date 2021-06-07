@@ -6,14 +6,37 @@
   "icon": "./example-thumbnail.png",
   "props": [
     {
+      "name": "low",
+      "displayName": "Steps Completed",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "high",
+      "displayName": "Total Steps",
+      "type": "number",
+      "default": 4
+    },
+    {
       "name": "text",
       "displayName": "Text",
       "type": "text",
-      "default": "Happy Hacking"
-    },
+      "default": "Loading..." },
     {
       "name": "color",
-      "displayName": "Color",
+      "displayName": "Text Color",
+      "type": "color",
+      "default": "#00A898"
+    },
+    {
+      "name": "backgroundColor",
+      "displayName": "Background Color",
+      "type": "color",
+      "default": "#FFFFFF"
+    },
+    {
+      "name": "barColor",
+      "displayName": "Bar Color",
       "type": "color",
       "default": "#00A898"
     }
