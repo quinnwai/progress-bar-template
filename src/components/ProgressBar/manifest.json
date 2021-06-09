@@ -7,24 +7,54 @@
   "props": [
     {
       "name": "low",
-      "displayName": "Steps Completed",
+      "displayName": "Minimum",
       "type": "number",
       "default": 1
     },
     {
       "name": "high",
-      "displayName": "Total Steps",
+      "displayName": "Maximum",
       "type": "number",
       "default": 4
     },
     {
-      "name": "text",
-      "displayName": "Text",
-      "type": "text",
-      "default": "Loading..." },
+      "name": "height",
+      "displayName": "Height",
+      "type": "number",
+      "default": 50,
+      "control": { "type": "slider", "max": 500, "min": 0 }
+    },
     {
-      "name": "color",
-      "displayName": "Text Color",
+      "name": "borderRadius",
+      "displayName": "Rounding",
+      "type": "number",
+      "default": 20,
+      "control": { "type": "slider", "max": 30, "min": 0 }
+    },
+    {
+      "name": "flexDirection",
+      "displayName": "Orientation",
+      "type": "text",
+      "default": "row",
+      "control": {
+        "type": "menu",
+        "options": [
+          { "label": "Left", "value": "row" },
+          { "label": "Right", "value": "row-reverse" },
+          { "label": "Top", "value": "column" },
+          { "label": "Bottom", "value": "column-reverse" }
+        ]
+      }
+    },
+    {
+      "name": "borderColor",
+      "displayName": "Border Color",
+      "type": "color",
+      "default": "#00A898"
+    },
+    {
+      "name": "barColor",
+      "displayName": "Bar Color",
       "type": "color",
       "default": "#00A898"
     },
@@ -33,12 +63,6 @@
       "displayName": "Background Color",
       "type": "color",
       "default": "#FFFFFF"
-    },
-    {
-      "name": "barColor",
-      "displayName": "Bar Color",
-      "type": "color",
-      "default": "#00A898"
     }
   ]
 }
