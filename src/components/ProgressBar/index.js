@@ -7,12 +7,12 @@ const ProgressBar = props => {
   const {
     low,
     high,
-    height,
     flexDirection,
     borderRadius,
     barColor,
     borderColor,
     backgroundColor,
+    _height,
   } = props
 
   // set flex value (relative length) of bar
@@ -25,7 +25,7 @@ const ProgressBar = props => {
   const wrapperStyles = [
     styles.wrapper,
     {
-      height: height == null ? 50 : height,
+      height: _height,
       backgroundColor: backgroundColor,
       borderColor: borderColor,
       borderRadius: borderRadius == null ? 20 : borderRadius,
@@ -49,7 +49,6 @@ const ProgressBar = props => {
 ProgressBar.propTypes = {
   low: PropTypes.number,
   high: PropTypes.number,
-  height: PropTypes.number,
   borderRadius: PropTypes.number,
 }
 

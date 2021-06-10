@@ -1,7 +1,7 @@
 {
   "name": "progress-bar-quinnwai",
   "description": "Progress Bar Project for Summer 2021 Onboarding",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "ISC",
   "author": "Quinn Wai Wong",
@@ -12,7 +12,7 @@
   },
   "adalo": {
     "logo": "./example-logo.png",
-    "displayName": "Progress Bar",
+    "displayName": "Progress Bar Quinn Wai",
     "components": [
       {
         "name": "ProgressBar",

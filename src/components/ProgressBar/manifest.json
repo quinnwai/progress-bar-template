@@ -1,28 +1,22 @@
 {
-  "displayName": "Progress Bar",
-  "defaultWidth": 160,
-  "defaultHeight": 24,
+  "displayName": "Progress Bar Quinn Wai",
+  "defaultWidth": 400,
+  "defaultHeight": 50,
   "components": "./index.js",
   "icon": "./example-thumbnail.png",
+  "resizeY": true,
   "props": [
     {
       "name": "low",
-      "displayName": "Minimum",
+      "displayName": "Value",
       "type": "number",
       "default": 1
     },
     {
       "name": "high",
-      "displayName": "Maximum",
+      "displayName": "Max Value",
       "type": "number",
       "default": 4
-    },
-    {
-      "name": "height",
-      "displayName": "Height",
-      "type": "number",
-      "default": 50,
-      "control": { "type": "slider", "max": 500, "min": 0 }
     },
     {
       "name": "borderRadius",
